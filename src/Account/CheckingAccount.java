@@ -1,6 +1,6 @@
-package com.chelsea;
+package Account;
 
-public class CheckingAccount extends BankAccount{
+public class CheckingAccount extends BankAccount {
 
     private int dailyLimit;
     private int dailyWithdrawn = 0;

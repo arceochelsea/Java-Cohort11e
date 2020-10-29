@@ -1,7 +1,7 @@
-package com.chelsea;
+package Account;
 
 public class BankAccount {
-    private int balance;
+    protected int balance;
     private String owner;
     private String accountNum;
     private String type;
@@ -27,7 +27,10 @@ public class BankAccount {
 
     @Override //optional flag
     public String toString() {
-        return "type: " + type + "\tAccountNum: " + accountNum + "\tOwner: " + owner + "\tbalance: " + balance;
+        int dollar = balance / 100;
+        int cents = balance % 100;
+        String balanceF = "$"+dollar + "." + cents;
+        return "type: " + type + "\tAccountNum: " + accountNum + "\tOwner: " + owner + "\tbalance: " + balanceF;
     }
 
 }
