@@ -1,6 +1,6 @@
 package Account;
 
-public class BankAccount {
+public class BankAccount implements Account {
     protected int balance;
     private String owner;
     private String accountNum;
@@ -13,12 +13,15 @@ public class BankAccount {
         this.type = type;
     }
 
+    //best practice to apply the override annotation to interface methods
+    @Override
     public void deposit(int amt) {
         if (amt > 0) {
             balance += amt;
         }
     }
 
+    @Override
     public void withdraw(int amt) {
         if (amt <= balance) {
             balance -= amt;
@@ -33,6 +36,7 @@ public class BankAccount {
         return "type: " + type + "\tAccountNum: " + accountNum + "\tOwner: " + owner + "\tbalance: " + balanceF;
     }
 
+    @Override
     public int getBalance() { return balance; }
 
 }
