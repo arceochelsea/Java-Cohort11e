@@ -36,7 +36,6 @@ public class BankAccount implements Account {
         return "type: " + type + "\tAccountNum: " + accountNum + "\tOwner: " + owner + "\tbalance: " + balanceF;
     }
 
-    @Override
     public int getBalance() { return balance; }
 
 }
