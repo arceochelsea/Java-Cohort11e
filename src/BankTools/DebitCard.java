@@ -16,9 +16,9 @@ public class DebitCard {
     //private Calendar expDate;
     private String cardOwner;
     private List<Account> atmAccounts = new ArrayList<>();
-    private List<CheckingAccount> atmCheckingAccounts = new ArrayList<>(); //interface
-    private List<SavingAccount> atmSavingAccounts;
-    private List<InvestmentAccount> atmInvestmentAccounts = new ArrayList<>();
+//    private List<CheckingAccount> atmCheckingAccounts = new ArrayList<>(); //interface
+//    private List<SavingAccount> atmSavingAccounts;
+//    private List<InvestmentAccount> atmInvestmentAccounts = new ArrayList<>();
 
     public DebitCard(String cardNum, String pin, String securityCode, String cardOwner, CheckingAccount primary){
         //array: atmCheckingAccounts[3]
@@ -30,7 +30,6 @@ public class DebitCard {
         this.securityCode = securityCode;
         this.cardOwner = cardOwner;
         this.primary = primary;
-        this.atmSavingAccounts = new ArrayList<>();
 
     }
 

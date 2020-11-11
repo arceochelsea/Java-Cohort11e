@@ -2,7 +2,6 @@ package Account;
 
 public class CheckingAccount extends BankAccount implements Account {
     //implements Acct is not necessary but there for readability!
-    //there because it is inheriting from bankacct already
 
     private int dailyLimit;
     private int dailyWithdrawn = 0;
